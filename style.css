@@ -1,0 +1,81 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: white;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 5fr;
+}
+
+svg {
+    fill: white;
+}
+
+/* ASIDE */
+aside {
+    height: 100vh;
+    padding: 1rem;
+    background-color: hsl(180, 100%, 40%);
+    grid-row: 1 / 3;
+    /* border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px; */
+}
+
+.dashboard {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard svg {
+    width: 50px;
+}
+
+/* HEADER */
+header {
+    padding: 25px 3rem;
+    background-color: hsl(0, 0%, 12.5%);
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.search input {
+    width: 25%;
+    background-color: darkgrey ;
+    border: none;
+    border-radius: 10px;
+}
+.search svg {
+    width: 25px;
+}
+
+/* MAIN */
+/* main {
+    background-color: hsl(0, 0%, 10%);
+} */
+
+.svgs {
+    display: flex;
+}
+
+
+
+
+
+
