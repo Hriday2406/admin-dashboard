@@ -11,10 +11,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 :root {
-    --primary-color : hsl(0, 0%, 100%);
-    --secondary-color : hsl(201, 79%, 46%);
-    --background-color : hsl(214, 32%, 91%);
-    --accent-color : hsl(42, 87%, 55%);
+    --primary-color : #121212;
+    --secondary-color : #0e7490;
+    --background-color : #313131;
+    --accent-color : #ff00ff;
 }
 
 body {
@@ -45,8 +45,6 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    /* border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px; */
 }
 
 .dashboard {
@@ -55,6 +53,10 @@ aside {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 0.025s linear;
+}
+.dashboard:active {
+    transform: translateY(2.5px);
 }
 
 .dashboard svg {
@@ -76,23 +78,31 @@ aside {
 .menu-items {
     list-style: none;
 }
-
 .menu-items li{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 25px;
+    transition: all 0.025s linear;
+}
+.menu-items li:active {
+    transform: translateY(2.5px);
 }
 
 /* HEADER */
 header {
+    color: white;
     padding: 15px 3.5rem;
     background-color: var(--primary-color);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 header svg{
-    fill: black;
+    fill: rgb(255, 255, 255);
+    transition: all 0.025s linear;
+}
+header svg:active {
+    transform: translateY(2.5px);
 }
 
 .header-top {
@@ -158,10 +168,9 @@ header svg{
 .btn {
     font-family: inherit;
     font-size: 1rem;
-    /* font-weight: bold; */
     padding: 0.75em 2em;
     margin-left: 30px;
-    color: var(--primary-color);
+    color: white;
     background-color: var(--secondary-color);
     border: none;
     border-radius: 25px;
@@ -175,6 +184,7 @@ header svg{
 
 /* MAIN */
 main {
+    color: white;
     padding: 1.5rem;
     display: grid;
     grid-template: 1fr 1fr / 2fr 2fr 1fr;
@@ -184,7 +194,7 @@ main {
 
 main svg {
     margin-left: 20px;
-    fill: black;
+    fill: white;
     width: 22.5px;
 }
 
@@ -201,7 +211,7 @@ main h1 {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .card p {
-    color: hsl(0, 0%, 30%);
+    color: #808080;
 }
 .accent-card {
     border-left: 10px solid var(--accent-color);
@@ -212,6 +222,12 @@ main h1 {
 .card-svg {
     text-align: right;
     margin-right: 10px;
+}
+.card-svg svg {
+    transition: all 0.025s linear;
+}
+.card-svg svg:active {
+    transform: translateY(2.5px);
 }
 .accent-card h2 {
     font-size: 1.25rem;
@@ -274,22 +290,4 @@ main h1 {
 .people h3 {
     font-weight: 500;
 }
-
-
-
-
-
-.svgs {
-    display: flex;
-}
-
-.svgs svg {
-    fill: black;
-    width: 20px;
-}
-
-
-
-
-
 
