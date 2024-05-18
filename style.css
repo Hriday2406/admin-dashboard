@@ -11,16 +11,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 :root {
-    --primary-color : #121212;
-    --secondary-color : #0e7490;
+    --primary-color : #000000;
+    --secondary-color : #272727;
     --background-color : #313131;
-    --accent-color : #ff00ff;
+    --accent-color : #b90057;
 }
 
 body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-image: url('./Images/bg.jpg');
     display: grid;
     grid-template: 1fr 4fr / 1fr 5fr;
 }
